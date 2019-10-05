@@ -1,12 +1,14 @@
 import axios from "axios";
 
-const KEY = "AIzaSyB8ZBIApwndHTVAtbVbbZ4ZFyiKgBeEPKU";
+// Get KEY at
+// https://console.developers.google.com/apis/
+const KEY = "";
 
-export default axios.create({
+export default axios.create( {
   baseURL: "https://www.googleapis.com/youtube/v3",
   params: {
     part: "snippet",
     maxResults: 5,
     key: KEY
   }
-});
+} );
